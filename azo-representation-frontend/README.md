@@ -297,48 +297,6 @@ Form → API Route → UserService → UserRepository → Validation → Creatio
 - Padrões consistentes
 - Reutilização de componentes
 
-## Como Usar
-
-### 1. **Desenvolvimento**
-```bash
-npm run dev
-```
-- Usa repositórios mock automaticamente
-- Dados de teste pré-carregados
-- Hot reload ativo
-
-### 2. **Produção**
-```bash
-npm run build
-npm start
-```
-- Usa repositórios de API
-- Configurações de segurança ativas
-- Otimizações de performance
-
-### 3. **Testes**
-```bash
-npm test
-```
-- Testes unitários do domínio
-- Testes de integração
-- Cobertura de código
-
-## 🔧 Configuração
-
-### Variáveis de Ambiente
-```env
-NODE_ENV=development
-NEXT_PUBLIC_API_BASE_URL=/api
-NEXT_PUBLIC_USE_MOCK_DATA=true
-AUTH_COOKIE_SAME_SITE=strict
-```
-
-### Estrutura de Dados
-- **Usuários**: ID, email, nome, role, timestamps
-- **Sessões**: Usuário + tokens de acesso
-- **Tokens**: Access token + refresh token + expiração
-
 ## Padrões Utilizados
 
 ### 1. **Repository Pattern**
